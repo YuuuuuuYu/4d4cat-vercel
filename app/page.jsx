@@ -6,6 +6,11 @@ const feedItems = [
         id: '1',
         title: '마지막으로 남길 메시지는?',
         url: 'https://lastmessage.4d4cat.site'
+    },
+    {
+        id: '2',
+        title: '(음악 관련 개발 준비중)',
+        url: '#'
     }
 ];
 
@@ -19,7 +24,7 @@ export default function Home() {
                 {feedItems.map((item) => (
                     <Link
                         key={item.id}
-                        href={item.url}
+                        href={item.url || "javascript:void(0)"}
                         target="_blank"
                         rel="noopener noreferrer"
                         className={styles.feedItem}
