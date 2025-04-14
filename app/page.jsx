@@ -9,7 +9,12 @@ const feedItems = [
     },
     {
         id: '2',
-        title: '(음악 관련 개발 준비중)',
+        title: '랜덤 사운드 재생',
+        url: 'https://port-0-services-m96em3g65a5eeaf4.sel4.cloudtype.app/'
+    },
+    {
+        id: '3',
+        title: '키워드 조회 관련 개발 준비중',
         url: '#'
     }
 ];
