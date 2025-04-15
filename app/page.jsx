@@ -30,7 +30,6 @@ export default function Home() {
                     <Link
                         key={item.id}
                         href={item.url || "javascript:void(0)"}
-                        target="_blank"
                         rel="noopener noreferrer"
                         className={styles.feedItem}
                     >
