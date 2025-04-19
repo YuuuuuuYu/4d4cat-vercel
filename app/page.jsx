@@ -10,7 +10,7 @@ const feedItems = [
     {
         id: '2',
         title: '랜덤 미디어 재생',
-        url: 'https://port-0-services-m96em3g65a5eeaf4.sel4.cloudtype.app/'
+        url: 'https://services.4d4cat.site'
     },
     {
         id: '3',
