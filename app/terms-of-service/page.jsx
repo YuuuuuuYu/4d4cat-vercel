@@ -21,10 +21,9 @@ export default function TermsOfService() {
                 <section className={styles.policySection}>
                     <h2>제2조 (제공 서비스)</h2>
                     <ul>
-                        <li>웹 도구 및 유틸리티</li>
-                        <li>메시지 전송 서비스</li>
-                        <li>미디어 재생 도구</li>
-                        <li>검색 및 분석 도구</li>
+                        <li>마지막으로 남길 메시지는?</li>
+                        <li>AI 기반 성격 유형 & 매력도 분석</li>
+                        <li>랜덤 미디어</li>
                     </ul>
                 </section>
 
