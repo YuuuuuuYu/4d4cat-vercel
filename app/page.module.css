@@ -11,6 +11,48 @@
   text-align: center;
 }
 
+/* 새로 추가된 스타일들 */
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  margin-top: 1rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.aboutSection,
+.servicesSection,
+.newsSection,
+.contactSection {
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 0.75rem;
+  border: 1px solid #e5e7eb;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #111827;
+  text-align: center;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #007bff;
+}
+
+.aboutContent p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #374151;
+  margin-bottom: 1rem;
+}
+
 .feedList {
   display: flex;
   flex-direction: column;
@@ -36,21 +78,104 @@
 .feedItemContent {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .feedItemTitle {
   font-size: 1.125rem;
   font-weight: 500;
   color: #111827;
+  width: 100%;
+}
+
+.feedItemDescription {
+  font-size: 0.9rem;
+  color: #6b7280;
+  line-height: 1.4;
+  margin-top: 0.25rem;
+  width: 100%;
 }
 
 .externalLinkIcon {
   height: 1.25rem;
   width: 1.25rem;
   color: #9ca3af;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
 }
 
+.feedItem {
+  position: relative;
+}
+
+.newsContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.newsItem {
+  background: white;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+}
+
+.newsItem h3 {
+  font-size: 1.1rem;
+  color: #111827;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.newsItem p {
+  color: #6b7280;
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.newsDate {
+  font-size: 0.8rem;
+  color: #9ca3af;
+  font-style: italic;
+}
+
+.contactContent {
+  background: white;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+}
+
+.contactContent p {
+  color: #374151;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.contactInfo {
+  margin-top: 1rem;
+}
+
+.contactInfo p {
+  margin-bottom: 0.5rem;
+  color: #6b7280;
+}
+
+.contactInfo a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contactInfo a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
 
 .footer {
   margin-top: 4rem;
@@ -64,12 +189,68 @@
   .footer {
     border-color: #374151;
   }
+  
+  .aboutSection,
+  .servicesSection,
+  .newsSection,
+  .contactSection {
+    background-color: #1f2937;
+    border-color: #374151;
+  }
+  
+  .newsItem,
+  .contactContent {
+    background-color: #111827;
+    border-color: #374151;
+  }
+  
+  .sectionTitle {
+    color: #f9fafb;
+  }
+  
+  .aboutContent p {
+    color: #d1d5db;
+  }
+  
+  .feedItemDescription {
+    color: #9ca3af;
+  }
+  
+  .newsItem h3 {
+    color: #f9fafb;
+  }
+  
+  .newsItem p {
+    color: #d1d5db;
+  }
+  
+  .contactContent p {
+    color: #d1d5db;
+  }
+  
+  .subtitle {
+    color: #9ca3af;
+  }
 }
 
 .footerContent {
   max-width: 42rem;
   margin: 0 auto;
   padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.footerAbout {
+  text-align: center;
+}
+
+.footerAbout h3 {
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+  color: var(--foreground);
+  font-weight: 600;
 }
 
 .footerLinks {
@@ -171,6 +352,75 @@
   opacity: 0.8;
 }
 
+/* 링크 스타일 */
+.linkToMore {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.moreLink {
+  display: inline-block;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border: 1px solid #007bff;
+  border-radius: 0.375rem;
+  transition: all 0.3s ease;
+}
+
+.moreLink:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.contactQuick {
+  text-align: center;
+}
+
+.contactMethod {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+}
+
+.contactMethod h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #111827;
+}
+
+.contactNote {
+  font-size: 0.875rem;
+  color: #6b7280;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+/* 다크모드 지원 */
+@media (prefers-color-scheme: dark) {
+  .contactMethod {
+    background-color: #111827;
+    border-color: #374151;
+  }
+  
+  .contactMethod h3 {
+    color: #f9fafb;
+  }
+  
+  .moreLink {
+    color: #60a5fa;
+    border-color: #60a5fa;
+  }
+  
+  .moreLink:hover {
+    background-color: #60a5fa;
+    color: #111827;
+  }
+}
+
 /* 모바일 반응형 */
 @media (max-width: 768px) {
   .container {
@@ -181,8 +431,24 @@
     font-size: 1.5rem;
   }
   
-  .contentSection {
-    padding: 1.5rem;
+  .aboutSection,
+  .servicesSection,
+  .newsSection,
+  .contactSection {
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .sectionTitle {
+    font-size: 1.25rem;
+  }
+  
+  .feedItemContent {
+    padding-right: 2rem;
+  }
+  
+  .footerContent {
+    gap: 1rem;
   }
   
   .footerLinks {
