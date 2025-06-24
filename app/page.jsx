@@ -9,11 +9,16 @@ const feedItems = [
     },
     {
         id: '2',
+        title: 'AI 기반 성격 유형 & 매력도 분석',
+        url: 'https://facial-analysis.4d4cat.site'
+    },
+    {
+        id: '3',
         title: '랜덤 미디어 재생',
         url: 'https://services.4d4cat.site'
     },
     {
-        id: '3',
+        id: '4',
         title: '키워드 조회 관련 개발 준비중',
         url: '#'
     }
