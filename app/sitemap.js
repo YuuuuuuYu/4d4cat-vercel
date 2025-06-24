@@ -17,6 +17,18 @@ export default function sitemap() {
             lastModified: new Date(),
             changeFrequency: 'monthly',
             priority: 0.8,
+        },
+        {
+            url: 'https://4d4cat.site/about',
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.8,
+        },
+        {
+            url: 'https://4d4cat.site/contact',
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.8,
         }
     ]
 }
